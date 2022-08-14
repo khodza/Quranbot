@@ -10,7 +10,6 @@ composer.start((ctx) => {
   ctx.replyWithHTML(
     `
   Assalamu alaykum ${ctx.message.from.first_name} \nWelcome to <b>Quran</b> bot,\n
-  The bot created by @Khodza_I \n
   `,
     keyboards.start
   );

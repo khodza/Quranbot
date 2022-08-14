@@ -21,7 +21,7 @@ const {
 
 const perPage = 10;
 
-composer.command("allsuras", async (ctx) => {
+composer.command("allsurahs", async (ctx) => {
   await ctx.scene.leave();
   let keyboards = [];
   let data = await axios.get(url).then((res) => {
@@ -37,7 +37,7 @@ composer.command("allsuras", async (ctx) => {
     ]);
   }
   ctx.replyWithHTML(
-    "Choose sura from the list:",
+    "Choose Surah 📜 from the list:",
 
     Markup.inlineKeyboard([
       ...keyboards.slice(0, perPage),
