@@ -5,7 +5,7 @@ const messages = require("../lib/messages");
 
 composer.help((ctx) => {
   ctx.replyWithHTML(
-    `<b>${messages.help}:</b> \n\nTo start tab to 👉🏼 /allsurahs  `
+    `<b>${messages.help}:</b> \n\nTo start click to 👉🏼 /allsurahs  `
   );
 });
 bot.use(composer.middleware());
