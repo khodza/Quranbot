@@ -8,8 +8,7 @@ const keyboards = require("../lib/keyboards");
 composer.start((ctx) => {
   console.log(ctx.message);
   ctx.replyWithHTML(
-    `
-  Assalamu alaykum ${ctx.message.from.first_name} \nWelcome to <b>Quran</b> bot,\n
+    `Assalamu alaykum ${ctx.message.from.first_name} 😅\nWelcome to <b> 📖 Quran</b> bot,\n
   `,
     keyboards.start
   );
